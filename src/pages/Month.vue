@@ -1,17 +1,18 @@
 <template>
     <section>
         <h1>Month of Code</h1>
-        <h2>Each week of the month, I learn 1 new thing.</h2>
+        <h2>4 weeks to learn 4 new things</h2>
 
         <div class="grid" style="padding-top: 1.5em;">
-            <div class="block">
-                <h3>SQL / Databases</h3>
+            <div class="block" :style="{ backgroundColor: this.RandomColor() }">
+                <h3><a href="https://github.com/Beepered/SQL-Practice">SQL / Databases</a></h3>
+                <p>Ranking: 5/10</p>
                 <section class="container">
                     <div class="divider" style="margin-right: 1em;">
                         <p>Resources:</p>
-                        <ul>
+                        <ul style="text-align: left;">
                             <li>
-                                Caleb Curry's <a
+                                Caleb Curry <a
                                     href="https://www.youtube.com/playlist?list=PL_c9BZzLwBRKC2PJwLFxc2y6cyXYYQzj3"
                                     class="tooltip">SQL
                                     series <span class="tooltip-text">database understanding</span></a>
@@ -35,60 +36,98 @@
                     <div class="divider">
                         <p>Procrastination hit hard. Got better by Thursday and got back into LeetCode. Couldn't
                             think of a project, so followed a youtube video.</p>
-                        <p><a href="https://github.com/Beepered/SQL-Practice">Link to project</a> for more details</p>
                     </div>
                 </section>
+                <div style="width: 70%; margin: auto">
+                    <img class="fit-image" src="@assets/img/month/sql.png">
+                </div>
             </div>
-            <div class="block">
-                <h3>Full-Stack</h3>
+            <div class="block" :style="{ backgroundColor: this.RandomColor() }">
+                <h3><a href="https://github.com/Beepered/Full-Stack-Tutorial">Full-Stack</a></h3>
+                <p>Ranking: 3/10</p>
                 <section class="container">
                     <div class="divider" style="margin-right: 1em;">
                         <p>Resources:</p>
-                        <ul>
+                        <ul style="text-align: left;">
                             <li>
-                                <p>Tech by Tim's </p><a href="https://www.youtube.com/watch?v=PppslXOR7TA&t=3364s">full
-                                    stack tutorial <span class="tooltip-text">it's ok</span></a>
+                                <p>Tech by Tim <a href="https://www.youtube.com/watch?v=PppslXOR7TA&t=3364s"
+                                        class="tooltip">full
+                                        stack tutorial <span class="tooltip-text">it's ok</span></a></p>
                             </li>
                             <li>
-                                <p>freeCodeCamp's </p><a href="https://www.youtube.com/watch?v=PWG7NlUDVaA&t=2538s">FARM
-                                    tutorial <span class="tooltip-text">absolutely horrible</span></a>
-                                <!-- doesn't walk through code, just copy pastes and explains -->
+                                <p>freeCodeCamp <a href="https://www.youtube.com/watch?v=PWG7NlUDVaA&t=2538s"
+                                        class="tooltip">FARM
+                                        tutorial <span class="tooltip-text">absolutely horrible</span></a></p>
+                                <!-- don't recommend: doesn't walk through code. just copy, pastes, and explains -->
                             </li>
                         </ul>
                     </div>
                     <div class="divider" style="margin-right: 1em;">
-                        <p>Was very busy this week. Didn't get much work done and redid the project 3 times. I used
-                            Flask and React.</p>
+                        <p>Very busy this week. Didn't get much work done and redid the project 3 times. I couldn't get
+                            the project to deploy, but I really don't like this project. I will make sure to follow a
+                            deployment tutorial first.</p>
                     </div>
                 </section>
+                <div style="width: 70%; margin: auto">
+                    <img class="fit-image" src="@assets/img/month/react.png">
+                </div>
             </div>
-            <div class="block">
+            <div class="block" :style="{ backgroundColor: this.RandomColor() }">
                 <h3>Unreal Engine</h3>
+                <p>Ranking: 8/10</p>
                 <section class="container">
-                    <div class="divider" style="margin-right: 1em;">
+                    <div class="divider-img" style="margin-right: 1em;">
+                        <img class="fit-image" src="@assets/img/month/UnrealEngine.png">
                     </div>
-                    <div class="divider" style="margin-right: 1em;">
-                        <p>Blah blah</p>
+                    <div class="divider" style="margin-right: 1em; max-width: 40%;">
+                        <p>Very fun to work on. Unreal Engine loads really fast / Unity is TOO slow. Made the
+                            scaffolding for something more so I hope to work on it
+                            later and make an actual game.</p>
                     </div>
                 </section>
             </div>
-            <div class="block">
-                <h3>XXX</h3>
+            <div class="block" :style="{ backgroundColor: this.RandomColor() }">
+                <h3>Roblox</h3>
+                <p>Ranking: 7/10</p>
                 <section class="container">
-                    <div class="divider" style="margin-right: 1em;">
+                    <div class="divider-img" style="margin-right: 1em;">
+                        <img class="fit-image" src="@assets/img/month/roblox.png">
                     </div>
-                    <div class="divider" style="margin-right: 1em;">
-                        <p>Blah blah</p>
+
+                    <div class="divider" style="margin-right: 1em; max-width: 40%;">
+                        <p>Roblox Studio is good for online games, but lacks many features most programming
+                            langauges and engines have. I started a 3D game first, but couldn't finish in time
+                            so I made a UI-focused game.</p>
                     </div>
                 </section>
             </div>
         </div>
 
-        <div>
+        <div style="margin-top: 2em" class="conclusion">
             <h2>Conclusion</h2>
+            <p>Overall, I learned a lot, but my favorite has to be making the games. SQL and Fullstack were ok, but it
+                felt more like a task to complete, since I didn't have a clear direction. I still need to learn to have
+                a smaller scope, because both Unreal and Roblox games were unfinished at the end of the week.</p>
         </div>
     </section>
 </template>
+
+<script>
+export default {
+    data() {
+        return {
+            colors: ["#ffd7d1", "#f0d9c0", "#f0f5d3", "#dff2ce",
+                "#b4dbd6", "#c5cdde", "#d2c5ed", "#dac3eb", "#e0cade"]
+        }
+    },
+    methods: {
+        RandomColor() {
+            const randomIndex = Math.floor(Math.random() * this.colors.length)
+            return this.colors[randomIndex]
+        }
+    }
+}
+</script>
 
 <style scoped>
 .grid {
@@ -97,7 +136,7 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 1.5em;
     row-gap: 2em;
-    max-width: 80%;
+    max-width: 82%;
 }
 
 .grid>div.block {
@@ -118,30 +157,48 @@
     border-radius: 2px;
     padding: 0.5em;
     position: relative;
-    max-width: 50%;
-    background-color: #f5f5f5;
+    min-width: 35%;
+    max-width: 60%;
+    background-color: rgb(250, 250, 250);
+}
+
+/* same as divider, but no border or color */
+.divider-img {
+    position: relative;
+    max-width: 100%;
+}
+
+.fit-image {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.conclusion {
+    border: 2px solid grey;
+    border-radius: 2px;
+    padding: 0.5em;
+    max-width: 65%;
+    align-content: center;
+    margin: auto;
+    background-color: rgb(250, 250, 250);
 }
 
 .tooltip-text {
     visibility: hidden;
-    max-width: 175px;
+    min-width: 60px;
+    max-width: 180px;
     background-color: rgb(236, 236, 236);
-    color: #5d5d5d;
+    color: #505050;
     text-align: center;
     font-size: small;
     border-radius: 5px;
-    padding: 5px;
+    padding: 3px;
     position: absolute;
     z-index: 1;
 }
 
 .tooltip:hover .tooltip-text {
     visibility: visible;
-}
-
-.ex-img {
-    max-height: 40%;
-    height: auto;
-    width: auto
 }
 </style>

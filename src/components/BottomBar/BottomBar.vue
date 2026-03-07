@@ -7,7 +7,7 @@ import Playground from "./Playground/Playground.vue";
 <template>
     <div class="bar">
         <div class="top" style="cursor: pointer;" @click="ToggleBar">
-            <p style="width: 50%; margin: 0 auto;">Hide</p>
+            <p style="width: 50%; margin: 0 auto;">{{ text }}</p>
         </div>
 
         <div class="base" :style="{ height: barHeight }" style="display: flex;">
@@ -17,11 +17,11 @@ import Playground from "./Playground/Playground.vue";
 </template>
 
 <script>
-import { collapsed, ToggleBar, barHeight } from "./state.js"
+import { collapsed, text, ToggleBar, barHeight } from "./state.js"
 
 export default {
     setup() {
-        return { collapsed, ToggleBar, barHeight }
+        return { collapsed, text, ToggleBar, barHeight }
     }
 }
 </script>
@@ -38,7 +38,7 @@ export default {
 }
 
 .top {
-    width: 7.5%;
+    width: 7%;
     height: 2.5em;
     background-color: #ececec;
     border-top-style: solid;

@@ -1,12 +1,14 @@
 import { ref, computed } from "vue";
 
 export const collapsed = ref(false);
+export const text = ref("Hide");
 export const ToggleBar = () => {
   collapsed.value = !collapsed.value;
+  text.value = collapsed.value ? "Show" : "Hide";
 };
 
 export const BAR_HEIGHT = 130;
 export const BAR_COLLAPSED_HEIGHT = 0;
 export const barHeight = computed(
-  () => `${collapsed.value ? BAR_COLLAPSED_HEIGHT : BAR_HEIGHT}px`
+  () => `${collapsed.value ? BAR_COLLAPSED_HEIGHT : BAR_HEIGHT}px`,
 );

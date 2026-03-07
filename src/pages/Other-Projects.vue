@@ -3,26 +3,32 @@
         <h1>
             <span class="reveal" @click="RevealSecret">O</span>ther Projects
         </h1>
-        <div class="side-image">
-            <img src="@assets/img/Unnamed.png" style="opacity: 0.9;">
+        <div class="side-image" style="left: 0">
+            <img draggable="false" src="@assets/img/background.png" style="opacity: 0.95;">
+        </div>
+
+        <div class="side-image" style="right: 0; transform: scaleX(-1);">
+            <img draggable="false" src="@assets/img/background2.png" style="opacity: 0.95;">
         </div>
 
         <div class="block">
             <div class="col left" style="z-index: 1">
-                <router-link class="route" to="/Month">ROUTE</router-link>
+                <router-link class="route" to="/Month">
+                    <img draggable="false" class="fit-image hover-effect" src="@assets/img/other_projects/month.jpg"
+                        alt="Jumpscare image" style="">
+                </router-link>
             </div>
             <div class=" col right">
                 <h2>Month of Code</h2>
-                <p class="facts">SQL, Full-Stack, Unreal Engine, XXX</p>
-                <p>1 week learning 1 thing
-                </p>
+                <p class="facts">SQL, Full-Stack, Unreal Engine, Roblox</p>
+                <p>1 week = 1 new thing</p>
             </div>
         </div>
         <div class="block">
             <div class="col left" style="z-index: 1">
                 <a href="https://luminice-star.itch.io/jumpscare" target="_blank" style="">
-                    <img class="fit-image hover-effect" src="@assets/img/other_projects/foxy.jpg" alt="Jumpscare image"
-                        style="">
+                    <img draggable="false" class="fit-image hover-effect" src="@assets/img/other_projects/foxy.jpg"
+                        alt="Jumpscare image" style="">
                 </a>
             </div>
             <div class=" col right">
@@ -37,7 +43,7 @@
         <div class="block">
             <div class="col left" style="z-index: 1">
                 <a href="https://mosaicly-seven.vercel.app/" target="_blank" style="">
-                    <img class="fit-image hover-effect" src="@assets/img/other_projects/mosaicly.png"
+                    <img draggable="false" class="fit-image hover-effect" src="@assets/img/other_projects/mosaicly.png"
                         alt="Mosaicly image" style="">
                 </a>
             </div>
@@ -52,7 +58,7 @@
         <div class="block">
             <div class="col left" style="z-index: 1">
                 <a href="https://luminice-star.itch.io/wypb-special" target="_blank">
-                    <img class="fit-image hover-effect" src="@assets/img/other_projects/wypb.png"
+                    <img draggable="false" class="fit-image hover-effect" src="@assets/img/other_projects/wypb.png"
                         alt="Would you press the button image">
                 </a>
             </div>
@@ -68,8 +74,8 @@
         <div class="block">
             <div class="col left" style="z-index: 1">
                 <a href="https://luminice-star.itch.io/mobile-smash-idea" target="_blank">
-                    <img class="fit-image hover-effect" src="@assets/img/other_projects/mobile_smash.png"
-                        alt="Mobile Smash image">
+                    <img draggable="false" class="fit-image hover-effect"
+                        src="@assets/img/other_projects/mobile_smash.png" alt="Mobile Smash image">
                 </a>
             </div>
             <div class="col right">
@@ -83,8 +89,8 @@
         <div class="block">
             <div class="col left" style="z-index: 1">
                 <a href="https://connor-lynchh.github.io/CMPM-169-Team-Project-Group-8/" target="_blank">
-                    <img class="fit-image hover-effect" src="@assets/img/other_projects/eerie_watch.png"
-                        alt="Eerie Watch image">
+                    <img draggable="false" class="fit-image hover-effect"
+                        src="@assets/img/other_projects/eerie_watch.png" alt="Eerie Watch image">
                 </a>
             </div>
             <div class="col right">
@@ -176,8 +182,7 @@ export default {
 
 .side-image {
     position: fixed;
-    top: 10%;
-    left: 0%;
+    bottom: 0;
     z-index: 0;
 }
 
