@@ -11,7 +11,7 @@
             </span>
             <section>
                 <p class="id" v-for="type in types" :key="type">{{ type }}</p>
-                <p>{{ height * 0.1 }}m</p>
+                <p>{{ (height * 0.1).toFixed(1) }}m</p>
             </section>
         </div>
     </div>

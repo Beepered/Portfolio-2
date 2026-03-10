@@ -4,7 +4,7 @@
             <span class="reveal" @click="RevealSecret">O</span>ther Projects
         </h1>
         <div class="side-image" style="left: 0;">
-            <img draggable="false" src="@assets/img/other_projects/background.png" style="opacity: 0.75;">
+            <img draggable="false" src="@assets/img/other_projects/background.png">
         </div>
         <!--
         Hides the text too much. Figure out later

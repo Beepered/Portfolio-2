@@ -63,9 +63,10 @@
                         </ul>
                     </div>
                     <div class="divider" style="margin-right: 1em;">
-                        <p>Very busy this week. Didn't get much work done and redid the project 3 times. I couldn't get
-                            the project to deploy, but I really don't like this project. I will make sure to follow a
-                            deployment tutorial first.</p>
+                        <p>I used React and Flask. Very busy this week. Didn't get much work done and redid the project
+                            3 times. I couldn't get
+                            the project to deploy, but I will make sure to follow a
+                            deployment tutorial first next time.</p>
                     </div>
                 </section>
                 <div style="width: 70%; margin: auto">
