@@ -1,6 +1,7 @@
 <!-- https://www.youtube.com/watch?v=CfTvye31Ad0&ab_channel=JustinBrooks -->
 
 <script setup>
+import Pokemon from "./Pokemon.vue";
 import Playground from "./Playground/Playground.vue";
 </script>
 
@@ -10,7 +11,8 @@ import Playground from "./Playground/Playground.vue";
             <p style="width: 50%; margin: 0 auto;">{{ text }}</p>
         </div>
 
-        <div class="base" :style="{ height: barHeight }" style="display: flex;">
+        <div class="base" :style="{ height: barHeight }">
+            <Pokemon></Pokemon>
             <Playground style="margin: auto;"></Playground>
         </div>
     </div>
@@ -56,5 +58,8 @@ export default {
     border-top-color: rgb(200, 200, 200);
 
     transition: 0.3s ease;
+    padding-left: 1em;
+    padding-right: 1em;
+    display: flex;
 }
 </style>

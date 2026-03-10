@@ -105,9 +105,13 @@
 
         <div style="margin-top: 2em" class="conclusion">
             <h2>Conclusion</h2>
-            <p>Overall, I learned a lot, but my favorite has to be making the games. SQL and Fullstack were ok, but it
+            <p class="conclusion-text">Overall, I learned a lot, but my favorite has to be making the games.
+                SQL
+                and
+                Fullstack were ok, but it
                 felt more like a task to complete, since I didn't have a clear direction. I still need to learn to have
-                a smaller scope, because both Unreal and Roblox games were unfinished at the end of the week.</p>
+                a smaller scope, because both Unreal and Roblox games were unfinished at the end of the week. It felt
+                good learning new things and making a project out of it. I recommend everyone to try it if possible.</p>
         </div>
     </section>
 </template>
@@ -177,7 +181,7 @@ export default {
 .conclusion {
     border: 2px solid grey;
     border-radius: 2px;
-    padding: 0.5em;
+    padding: 1em;
     max-width: 65%;
     align-content: center;
     margin: auto;

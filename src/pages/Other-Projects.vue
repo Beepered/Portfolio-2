@@ -3,35 +3,37 @@
         <h1>
             <span class="reveal" @click="RevealSecret">O</span>ther Projects
         </h1>
-        <div class="side-image" style="left: 0">
-            <img draggable="false" src="@assets/img/background.png" style="opacity: 0.95;">
+        <div class="side-image" style="left: 0;">
+            <img draggable="false" src="@assets/img/other_projects/background.png" style="opacity: 0.75;">
         </div>
+        <!--
+        Hides the text too much. Figure out later
 
         <div class="side-image" style="right: 0; transform: scaleX(-1);">
-            <img draggable="false" src="@assets/img/background2.png" style="opacity: 0.95;">
+            <img draggable="false" src="@assets/img/other_projects/background2.png" style="opacity: 0.75;">
         </div>
-
+        -->
         <div class="block">
-            <div class="col left" style="z-index: 1">
+            <div class="col left">
                 <router-link class="route" to="/Month">
                     <img draggable="false" class="fit-image hover-effect" src="@assets/img/other_projects/month.jpg"
                         alt="Jumpscare image" style="">
                 </router-link>
             </div>
-            <div class=" col right">
+            <div class="col right">
                 <h2>Month of Code</h2>
                 <p class="facts">SQL, Full-Stack, Unreal Engine, Roblox</p>
                 <p>1 week = 1 new thing</p>
             </div>
         </div>
         <div class="block">
-            <div class="col left" style="z-index: 1">
+            <div class="col left">
                 <a href="https://luminice-star.itch.io/jumpscare" target="_blank" style="">
                     <img draggable="false" class="fit-image hover-effect" src="@assets/img/other_projects/foxy.jpg"
                         alt="Jumpscare image" style="">
                 </a>
             </div>
-            <div class=" col right">
+            <div class="col right">
                 <h2>Random Jumpscare</h2>
                 <p class="facts">Python, Tkinter</p>
                 <p>Funny program that has a 1/10000 chance of playing a jumpscare. It autostarts and you can change
@@ -41,7 +43,7 @@
             </div>
         </div>
         <div class="block">
-            <div class="col left" style="z-index: 1">
+            <div class="col left">
                 <a href="https://mosaicly-seven.vercel.app/" target="_blank" style="">
                     <img draggable="false" class="fit-image hover-effect" src="@assets/img/other_projects/mosaicly.png"
                         alt="Mosaicly image" style="">
@@ -56,7 +58,7 @@
             </div>
         </div>
         <div class="block">
-            <div class="col left" style="z-index: 1">
+            <div class="col left">
                 <a href="https://luminice-star.itch.io/wypb-special" target="_blank">
                     <img draggable="false" class="fit-image hover-effect" src="@assets/img/other_projects/wypb.png"
                         alt="Would you press the button image">
@@ -72,7 +74,7 @@
             </div>
         </div>
         <div class="block">
-            <div class="col left" style="z-index: 1">
+            <div class="col left">
                 <a href="https://luminice-star.itch.io/mobile-smash-idea" target="_blank">
                     <img draggable="false" class="fit-image hover-effect"
                         src="@assets/img/other_projects/mobile_smash.png" alt="Mobile Smash image">
@@ -87,7 +89,7 @@
             </div>
         </div>
         <div class="block">
-            <div class="col left" style="z-index: 1">
+            <div class="col left">
                 <a href="https://connor-lynchh.github.io/CMPM-169-Team-Project-Group-8/" target="_blank">
                     <img draggable="false" class="fit-image hover-effect"
                         src="@assets/img/other_projects/eerie_watch.png" alt="Eerie Watch image">
@@ -146,7 +148,7 @@ export default {
 .block {
     display: flex;
     padding: 1.5em;
-    width: 85%;
+    width: 80%;
     margin: auto;
 }
 
@@ -154,6 +156,7 @@ export default {
     float: left;
     text-align: center;
     align-content: center;
+    z-index: 1;
 }
 
 .block>div.left {
@@ -168,14 +171,8 @@ export default {
     margin-right: 2em;
 }
 
-.fit-image {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-}
-
 .facts {
-    /* for the programming languages part" */
+    /* programming languages section" */
     color: rgb(110, 110, 110);
     line-height: 10px;
 }
