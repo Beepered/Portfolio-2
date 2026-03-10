@@ -81,7 +81,7 @@ export default {
             const month = date.getMonth() + 1
             const year = date.getFullYear()
 
-            return Math.floor((year / day * month / day) % maxPokemon);
+            return Math.floor(((year / day) * ((month / day) * 10)) % maxPokemon);
         }
     },
     mounted() {
