@@ -25,10 +25,12 @@
                         Though I have a degree in game design, programming interests me as a whole,
                         and I would like to learn more and experience software development as a whole.
                     </p>
+                    <!--
                     <div style="margin-top: 2.5em;">
                         <a href="https://docs.google.com/document/d/1Y3NPLMJ7Zu68bm68akAthKcHAYK8E-DX4vM7Souc_6o/edit?tab=t.0#heading=h.e8nqy5ycl96p"
                             target="_blank" class="resume-btn">Resume</a>
                     </div>
+                    -->
                 </div>
             </div>
         </div>
