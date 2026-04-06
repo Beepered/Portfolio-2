@@ -5,11 +5,12 @@
             <p class="id">#{{ id }}</p>
         </div>
 
-        <div style="display: flex; gap: 0.25em; justify-content: center;">
-            <span title="Pokemon of the day">
-                <img :src="sprite" alt="Sprite" class="fit-image sprite" :style="{ backgroundColor: color }">
+        <div style="display: flex; justify-content: center;">
+            <span title="Pokemon of the day" style="border-radius: 5px 0px 0px 5px;"
+                :style="{ backgroundColor: color1 }">
+                <img :src="sprite" alt="Sprite" class="fit-image">
             </span>
-            <section>
+            <section style="width: 50%; border-radius: 0px 5px 5px 0px;" :style="{ backgroundColor: color2 }">
                 <p class="id" v-for="type in types" :key="type">{{ type }}</p>
                 <p>{{ (height * 0.1).toFixed(1) }}m</p>
             </section>
@@ -44,7 +45,8 @@ export default {
             name: "",
             id: "",
             sprite: "",
-            color: "",
+            color1: "",
+            color2: "",
             types: [],
             height: ""
         }
@@ -67,7 +69,8 @@ export default {
                 for (let type of data.types) {
                     this.types.push(type.type.name)
                 }
-                this.color = typeColors[this.types[0]]
+                this.color1 = typeColors[this.types[0]]
+                this.color2 = this.types[1] ? typeColors[this.types[1]] : this.color1
                 this.height = data.height
 
             } catch (error) {
@@ -109,6 +112,4 @@ export default {
     color: rgb(89, 89, 89);
     font-size: small;
 }
-
-.sprite {}
 </style>
