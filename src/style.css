@@ -57,9 +57,9 @@ button:focus-visible {
 }
 
 .fit-image {
-    max-height: 100%;
-    width: 100%;
-    object-fit: contain;
+  max-height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 #app {
@@ -67,7 +67,7 @@ button:focus-visible {
   margin: 0 auto;
   justify-items: center;
   text-align: center;
-  my-scalp: itchy;
+  i-just-want-a-job: true;
 }
 
 @media (prefers-color-scheme: light) {

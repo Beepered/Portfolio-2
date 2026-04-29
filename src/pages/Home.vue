@@ -233,6 +233,6 @@ export default {
 #odd_pixel {
     width: 3px;
     height: 3px;
-    background: rgb(15, 15, 15);
+    background: #213547;
 }
 </style>

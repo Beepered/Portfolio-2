@@ -1,13 +1,13 @@
 <template>
     <section style="margin-top: 2em">
+        <!-- I wish I could show my funny side, but I'll be put on a guillotine -->
         <div class="img" style="margin-bottom: 3em;">
-            <!-- You see this? -->
-            <img src="@assets/img/funny/gangnam.gif" alt="Who cares about alt text" style="width:13%">
-            <img src="@assets/img/funny/cat-water.gif" alt="Blah blah blah. Runs away on all four" style="width:12%">
-            <a href="https://www.youtube.com/watch?v=gRpLPv41WxA&ab_channel=SuperGuy" target="_blank"><img
-                    src="@assets/img/funny/geras.gif" alt="Geras MK1 combo" style="width:26%; cursor: default;"></a>
-            <img src="@assets/img/funny/twerk.gif" alt="Funny twerking dog" style="width:15%">
-            <img src="@assets/img/funny/rat-lunge.gif" alt="Have at thee" style="width:15%">
+            <img src="@assets/img/funny/poke.gif" alt="I'm throwing you away" style="width:18%">
+            <img src="@assets/img/funny/bunny.gif" alt="Praying for the best, expecting the worst" style="width:17%;">
+            <img src="@assets/img/funny/monster house.gif" alt="Oh man" style="width:18%;">
+            <img src="@assets/img/funny/boof.gif" alt="I begging" style="width:14%">
+            <img src="@assets/img/funny/cat shake.gif" alt="Staying positive is hard. I'm on team negativity"
+                style="width:16%">
         </div>
 
         <div class="middle">
@@ -15,14 +15,12 @@
         </div>
 
         <div class="img" style="margin-top: 3em;">
-            <img src="@assets/img/funny/chica.gif" alt="I'm feeling romantical" style="width:15%">
-            <img src="@assets/img/funny/fall.gif" alt="Falling up stairs" style="width:20%">
-            <img src="@assets/img/funny/brick.gif" alt="Ouch" style="width:20%">
-            <img src="@assets/img/funny/dance.gif" alt="Impressive moves" style="width:18%">
-            <a href="https://www.youtube.com/shorts/zzClIW2kKQw" target="_blank"><img src="@assets/img/funny/minion.gif"
-                    alt="Popcorn" style="width:18%; cursor: default;"></a>
+            <img src="@assets/img/funny/beach.png" alt="I'm going swimming" style="width:18%">
+            <img src="@assets/img/funny/fish.png" alt="Real?" style="width:18%">
+            <img src="@assets/img/funny/jail.png" alt="J-ail" style="width:20%">
+            <img src="@assets/img/funny/sad.png" alt="blue" style="width:22%">
+            <img src="@assets/img/funny/age.png" alt="age?" style="width:22%">
         </div>
-        <!-- Judge all you want, you can't do anything-->
 
     </section>
 </template>
