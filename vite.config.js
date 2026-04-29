@@ -4,7 +4,7 @@ import vue from "@vitejs/plugin-vue";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/Portfolio/",
+  base: "/Portfolio-2/",
   plugins: [vue()],
   resolve: {
     alias: {
@@ -15,7 +15,7 @@ export default defineConfig({
       "@pages": path.resolve(__dirname, "./src/pages"),
       "@characters": path.resolve(
         __dirname,
-        "./src/components/BottomBar/Playground/characters"
+        "./src/components/BottomBar/Playground/characters",
       ),
     },
   },
