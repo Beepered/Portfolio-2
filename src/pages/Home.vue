@@ -2,8 +2,12 @@
     <section>
         <div class="padd" style="padding-top: 0.75em">
             <h1>Brendan Trieu</h1>
-            <p style="font-size: 1.3em;">Hey there! This is my Computer Science portfolio. I have a Game Development
-                portfolio but you need to search for it like a pirate. Feel free to sit anywhere.</p>
+            <div class="container">
+                <p style="font-size: 1.3em;">Hey there! Welcome to my Computer Science portfolio. I have a Game
+                    Development
+                    portfolio but you have to search for it like a pirate.</p>
+                <div id="odd_pixel" @click="this.$router.push('/Funny')"></div>
+            </div>
         </div>
 
         <div style="background-color: #f4f4f4; margin: 0;">
@@ -16,9 +20,12 @@
                     <p>My name is Brendan Trieu. I graduated UC: Santa Cruz with a
                         Bachelor of
                         Science in
-                        Computer Science.
+                        Computer Science and have worked on many projects alone and in teams.
                         I am passionate about programming and really enjoy creating things and seeing what comes out.
+                        Currently working as a Robotics Instructor teaching kids how to program and build robots, but
+                        hoping to get my start in the tech industry.
                     </p>
+
                 </div>
             </div>
         </div>
@@ -44,8 +51,8 @@
             </div>
             <div class="col">
                 <div style="width: 90%">
-                    <p>Leadership/Teamwork</p>
-                    <progress-bar :progress="85" style="width: 80%; margin: auto;"></progress-bar>
+                    <p>Web Development</p>
+                    <progress-bar :progress="80" style="width: 80%; margin: auto;"></progress-bar>
                 </div>
                 <div style="width: 90%">
                     <p>Object Oriented Programming</p>
@@ -68,7 +75,10 @@
                     website</a></p>
 
             <QuoteGenerator style="font-size: 1.1em;"></QuoteGenerator>
+
         </div>
+
+
 
         <div class="footer">
             <div class="social_link">
@@ -93,7 +103,7 @@
             </div>
         </div>
 
-        <div id="odd_pixel" @click="this.$router.push('/Funny')" :style="`margin-left: ${margin}%;`"></div>
+
     </section>
 </template>
 
@@ -169,6 +179,14 @@ export default {
 </script>
 
 <style scoped>
+.container {
+    display: flex;
+    justify-content: center;
+    /* Horizontal centering */
+    align-items: center;
+    gap: 0px;
+}
+
 .footer {
     margin: auto;
     display: flex;
@@ -200,15 +218,6 @@ export default {
     width: 50%;
 }
 
-.resume-btn {
-    padding: 0.5em;
-    border: 2px solid rgb(67, 67, 67);
-    background-color: white;
-    border-radius: 5px;
-    font-size: 1.2em;
-    color: rgb(0, 0, 0);
-}
-
 .social_link {
     padding: 0.5em;
     display: flex;
@@ -222,9 +231,8 @@ export default {
 }
 
 #odd_pixel {
-    width: 1.2em;
-    height: 1.2em;
-    margin-top: 2em;
-    background: rgb(250, 250, 250);
+    width: 3px;
+    height: 3px;
+    background: rgb(15, 15, 15);
 }
 </style>

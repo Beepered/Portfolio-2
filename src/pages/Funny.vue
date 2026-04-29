@@ -11,17 +11,7 @@
         </div>
 
         <div class="middle">
-            <p>I can do whatever I want. This is <i>MY</i> portfolio wahhahaha</p>
-            <p>I can predict your future. Please enter your name and birthday.</p>
-            <input type="text" maxLength=25 size=27 v-model="name">
-            <input type="date" id="birthday" v-model="date">
-            <button class="submit-btn" @click="CheckForm" v-on:keyup.enter="CheckForm">Submit</button>
-            <p class="error" v-show="error">Nuh uh. You need to fill it all out</p>
-
-            <p><b>Your result: </b></p>
-            <transition name="fadeText">
-                <p class="result" v-show="result" :key="count">Dead</p>
-            </transition>
+            <p>I'm going insane!</p>
         </div>
 
         <div class="img" style="margin-top: 3em;">
