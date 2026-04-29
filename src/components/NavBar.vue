@@ -1,8 +1,6 @@
 <template>
   <div id="nav">
     <router-link class="route" to="/">Home</router-link>
-    <router-link class="route" :to="{ name: 'CtC' }">Cash the Cache</router-link>
-    <router-link class="route" :to="{ name: 'Fight' }">Fight Game</router-link>
     <router-link class="route" :to="{ name: 'OtherProjects' }">Other Projects</router-link>
   </div>
 </template>

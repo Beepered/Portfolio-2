@@ -2,9 +2,8 @@
     <section>
         <div class="padd" style="padding-top: 0.75em">
             <h1>Brendan Trieu</h1>
-            <p style="font-size: 1.3em;">Hey-o! This is Brendan Trieu's portfolio, a place where I delve further into my
-                projects the process and
-                a bunch of other random stuff.</p>
+            <p style="font-size: 1.3em;">Hey there! This is my Computer Science portfolio. I have a Game Development
+                portfolio but you need to search for it like a pirate. Feel free to sit anywhere.</p>
         </div>
 
         <div style="background-color: #f4f4f4; margin: 0;">
@@ -17,13 +16,8 @@
                     <p>My name is Brendan Trieu. I graduated UC: Santa Cruz with a
                         Bachelor of
                         Science in
-                        Computer Science:
-                        Computer Game Design.
-                        I am passionate about programming and creating thing with my skills, whether it is video games
-                        or
-                        drawings.
-                        Though I have a degree in game design, programming interests me as a whole,
-                        and I would like to learn more and experience software development as a whole.
+                        Computer Science.
+                        I am passionate about programming and really enjoy creating things and seeing what comes out.
                     </p>
                 </div>
             </div>
@@ -40,17 +34,17 @@
                     <progress-bar :progress="50" style="width: 80%; margin: auto;"></progress-bar>
                 </div>
                 <div style="width: 90%">
-                    <p>Unity (Game Engine)</p>
-                    <progress-bar :progress="90" style="width: 80%; margin: auto;"></progress-bar>
+                    <p>Python</p>
+                    <progress-bar :progress="70" style="width: 80%; margin: auto;"></progress-bar>
                 </div>
                 <div style="width: 90%">
-                    <p>Godot (Game Engine)</p>
+                    <p>Vue.js</p>
                     <progress-bar :progress="75" style="width: 80%; margin: auto;"></progress-bar>
                 </div>
             </div>
             <div class="col">
                 <div style="width: 90%">
-                    <p>Game Development</p>
+                    <p>Leadership/Teamwork</p>
                     <progress-bar :progress="85" style="width: 80%; margin: auto;"></progress-bar>
                 </div>
                 <div style="width: 90%">
@@ -59,7 +53,7 @@
                 </div>
                 <div style="width: 90%">
                     <p>System Design</p>
-                    <progress-bar :progress="65" style="width: 80%; margin: auto;"></progress-bar>
+                    <progress-bar :progress="70" style="width: 80%; margin: auto;"></progress-bar>
                 </div>
                 <div style="width: 90%">
                     <p>Hunger</p>

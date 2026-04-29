@@ -1,34 +1,18 @@
 <!-- "npm run deploy" to update/deploy github pages version -->
 
 <script setup>
-import LoadingBar from '@components/LoadingBar.vue'
 import NavBar from '@components/NavBar.vue';
 import BottomBar from '@components/BottomBar/BottomBar.vue';
 </script>
 
 <template>
-  <div v-if="!skip" style="display: flex; justify-content: center;"> <!-- div for better skip loading -->
-    <transition name="GrowFade" @after-leave="page_loaded = true">
-      <div v-if="!progress_complete" class="progress-bar">
-        <LoadingBar @loading_complete="progress_complete = true" />
-      </div>
-    </transition>
-  </div>
-
-  <div v-if="!progress_complete" class="skip-container">
-    <!-- Skip loading on click -->
-    <p class="skip-loading" @click="skip = true; progress_complete = true; page_loaded = true;">Skip Loading</p>
-  </div>
-
   <!-- router -->
   <transition name="fade">
-    <section v-if="page_loaded">
+    <section>
       <NavBar></NavBar>
 
       <router-view v-slot="{ Component }">
-        <Transition name="fade" mode="out-in">
-          <component :is="Component" style="padding-bottom: 145px;" />
-        </Transition>
+        <component :is="Component" style="padding-bottom: 145px;" />
       </router-view>
 
       <BottomBar></BottomBar>
@@ -40,23 +24,10 @@ import BottomBar from '@components/BottomBar/BottomBar.vue';
 <script>
 export default {
   name: 'App',
-  components: { LoadingBar },
+  components: {},
   data() {
     return {
-      progress_complete: false,
-      page_loaded: false,
-      skip: false
     }
-  },
-  watch: { // idiotically, difficult way to change background color
-    $route: {
-      handler(to) {
-        const body = document.body;
-        const color = to.meta.backgroundColor || 'white'; // Default color
-        body.style.backgroundColor = color;
-      },
-      immediate: true,
-    },
   },
   methods: {
 
