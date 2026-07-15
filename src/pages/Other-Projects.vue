@@ -3,13 +3,24 @@
         <h1>
             <span class="reveal" @click="RevealSecret">O</span>ther Projects
         </h1>
-        <!--
-        <div class="side-image" style="left: 0;">
-            <img draggable="false" src="@assets/img/other_projects/background.png">
-        </div>
-        -->
         <div class="side-image" style="left: 0;">
             <img draggable="false" src="@assets/img/other_projects/background2.png">
+        </div>
+        <div class="block">
+            <div class="col left">
+                <a href="https://black-mold-client.onrender.com/" target="_blank">
+                    <img draggable="false" class="fit-image hover-effect" src="@assets/img/other_projects/mold.png"
+                        alt="Black Mold image">
+                </a>
+            </div>
+            <div class="col right">
+                <h2>Black Mold Fullstack Website</h2>
+                <p class="facts">MongoDB, Express.js, React.js, Node.js</p>
+                <p>My first <b>REAL</b> full-stack website. It took longer than I though, mostly, because I didn't know
+                    what I wanted to do with it. I have a goal for this
+                    project, but it requires me to
+                    not tell anyone.</p>
+            </div>
         </div>
         <div class="block">
             <div class="col left">
