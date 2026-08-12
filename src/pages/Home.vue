@@ -1,12 +1,35 @@
 <template>
     <section>
-        <div class="padd" style="padding-top: 0.75em">
-            <h1>Brendan Trieu</h1>
+        <div class="margins" style="padding-top: 0.75em">
+            <h1 >Brendan Trieu</h1>
             <div class="container">
-                <p style="font-size: 1.3em;">Hey there! Welcome to my Computer Science portfolio. I have a Game
+                <p style="font-size: 1.3em; margin: 0;">Hey there! Welcome to my Computer Science portfolio. I have a Game
                     Development
                     portfolio but you have to search for it like a pirate.</p>
-                <div id="odd_pixel" @click="this.$router.push('/Funny')"></div>
+                <div id="odd_pixel" style="margin-left: 5px" @click="this.$router.push('/Funny')"></div>
+            </div>
+        </div>
+
+        <div class="link-holder">
+            <div class="social_link">
+                <a href="https://www.linkedin.com/in/brendan-trieu-882753266/" target="_blank"
+                    style="float: left;">Linkedin<img src="@assets/icons/linkedin.png" class="icon"
+                        style="float: right;"></a>
+            </div>
+
+            <div class="social_link">
+                <a href="https://luminice-star.itch.io/" target="_blank" style="float: left;">itch.io<img
+                        src="@assets/icons/itch.png" class="icon" style="float: right;"></a>
+            </div>
+
+            <div class="social_link">
+                <a href="https://github.com/Beepered" target="_blank" style="float: left;">Github<img
+                        src="@assets/icons/github.png" class="icon" style="float: right;"></a>
+            </div>
+
+            <div class="social_link">
+                <a href="mailto:bktrieu@gmail.com" target="_blank" style="float: left;">Email<img
+                        src="@assets/icons/email.png" class="icon" style="float: right;"></a>
             </div>
         </div>
 
@@ -20,9 +43,9 @@
                     <p>My name is Brendan Trieu. I graduated UC: Santa Cruz with a
                         Bachelor of
                         Science in
-                        Computer Science and have worked on many projects alone and in teams.
+                        Computer Science and have experience in web development and software engineering.
                         I am passionate about programming and really enjoy creating things and seeing what comes out.
-                        Currently working as a Robotics Instructor teaching kids how to program and build robots, but
+                        Currently working as a Robotics Instructor, but
                         hoping to get my start in the tech industry.
                     </p>
 
@@ -69,7 +92,7 @@
             </div>
         </div>
 
-        <div class="padd" style="margin: auto; width: 70%;">
+        <div class="margins" style="margin: auto; width: 70%;">
             <p>View my <a href="https://sites.google.com/view/brendan-trieu-portfolio/home" target="_blank">old
                     portfolio
                     website</a></p>
@@ -77,33 +100,6 @@
             <QuoteGenerator style="font-size: 1.1em;"></QuoteGenerator>
 
         </div>
-
-
-
-        <div class="footer">
-            <div class="social_link">
-                <a href="https://www.linkedin.com/in/brendan-trieu-882753266/" target="_blank"
-                    style="float: left;">Linkedin<img src="@assets/icons/linkedin.png" class="icon"
-                        style="float: right;"></a>
-            </div>
-
-            <div class="social_link">
-                <a href="https://luminice-star.itch.io/" target="_blank" style="float: left;">itch.io<img
-                        src="@assets/icons/itch.png" class="icon" style="float: right;"></a>
-            </div>
-
-            <div class="social_link">
-                <a href="https://github.com/Beepered" target="_blank" style="float: left;">Github<img
-                        src="@assets/icons/github.png" class="icon" style="float: right;"></a>
-            </div>
-
-            <div class="social_link">
-                <a href="mailto:bktrieu@gmail.com" target="_blank" style="float: left;">Email<img
-                        src="@assets/icons/email.png" class="icon" style="float: right;"></a>
-            </div>
-        </div>
-
-
     </section>
 </template>
 
@@ -182,12 +178,10 @@ export default {
 .container {
     display: flex;
     justify-content: center;
-    /* Horizontal centering */
     align-items: center;
-    gap: 0px;
 }
 
-.footer {
+.link-holder {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -195,13 +189,12 @@ export default {
     padding: 12px;
     width: 55vw;
     margin-top: 1em;
-    bottom: 0;
-    left: 0;
+    margin-bottom: 2em;
     border-radius: 6px;
     background-color: #f4f4f4;
 }
 
-.padd {
+.margins {
     padding-top: 2em;
     padding-bottom: 2em;
 }
